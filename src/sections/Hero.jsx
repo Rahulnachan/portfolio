@@ -5,7 +5,7 @@ import {
   FaArrowRight,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
+  FaWhatsapp,      // Changed: FaTwitter → FaWhatsapp
   FaEnvelope,
 } from 'react-icons/fa';
 
@@ -157,15 +157,16 @@ export const Hero = () => {
               >
                 <FaLinkedin />
               </motion.a>
+              {/* WhatsApp icon - replace phone number with your actual number */}
               <motion.a
-                href='https://twitter.com'
+                href='https://wa.me/919022799695'   // Change to your WhatsApp number (country code + number, no '+' or spaces)
                 target='_blank'
                 rel='noopener noreferrer'
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                className='w-12 h-12 rounded-full glass flex items-center justify-center text-xl text-accent-cyan hover:shadow-glow-cyan transition-all'
+                className='w-12 h-12 rounded-full glass flex items-center justify-center text-xl text-green-400 hover:shadow-glow-cyan transition-all'
               >
-                <FaTwitter />
+                <FaWhatsapp />
               </motion.a>
               <motion.a
                 href={`mailto:${personalInfo.email}`}
@@ -178,10 +179,10 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Hero Image */}
+          {/* Hero Image - now visible on all screen sizes */}
           <motion.div
             variants={itemVariants}
-            className='relative hidden lg:block'
+            className='relative'   // removed "hidden lg:block" so image appears on mobile
           >
             <motion.div
               animate={{ y: [0, -20, 0] }}
@@ -191,8 +192,8 @@ export const Hero = () => {
               {/* Glow Background */}
               <div className='absolute inset-0 bg-gradient-to-r from-accent-cyan to-accent-purple rounded-2xl blur-3xl opacity-30 animate-pulse' />
 
-              {/* Image Container */}
-              <div className='relative glass p-1 rounded-2xl overflow-hidden w-64 h-80'>
+              {/* Image Container - responsive sizing */}
+              <div className='relative glass p-1 rounded-2xl overflow-hidden w-48 h-60 sm:w-64 sm:h-80 mx-auto'>
                 <img
                   src={RahulImage}
                   alt='Rahul Nachan'
