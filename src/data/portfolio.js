@@ -63,7 +63,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
     technologies: ["React.js", "Tailwind CSS", "Java", "Spring Boot", "REST API"],
     liveLink: "https://rn-classes-two.vercel.app/",
-    githubLink: "https://github.com/Rahulnachan/rn-classes",   // ✅ Updated
+    githubLink: "https://github.com/Rahulnachan/RNClasses",   // ✅ Corrected
     features: [
       "Student Dashboard",
       "Course Management",
@@ -79,7 +79,7 @@ export const projects = [
     longDescription: "Complete e-commerce platform with product catalog, shopping cart, and integrated payment system.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
     technologies: ["React.js", "JavaScript", "Tailwind CSS", "WooCommerce"],
-    githubLink: "https://github.com/Rahulnachan/grocery-ecommerce",   // ✅ Updated
+    githubLink: "https://github.com/Rahulnachan/grocify",   // ✅ Corrected
     features: [
       "Product Catalog",
       "Shopping Cart",
@@ -142,8 +142,8 @@ export const testimonials = [
 
 export const socialLinks = [
   { icon: "FaGithub", url: "https://github.com/Rahulnachan", label: "GitHub" },
-  { icon: "FaLinkedin", url: "https://linkedin.com/in/rahul-nachan-88335a372", label: "LinkedIn" },  // Fixed URL
-  { icon: "FaWhatsapp", url: "https://wa.me/919022799695", label: "WhatsApp" },  // Changed from Twitter
+  { icon: "FaLinkedin", url: "https://linkedin.com/in/rahul-nachan-88335a372", label: "LinkedIn" },
+  { icon: "FaWhatsapp", url: "https://wa.me/919022799695", label: "WhatsApp" },
   { icon: "FaEnvelope", url: "mailto:nachanrahul8@gmail.com", label: "Email" }
 ];
 
