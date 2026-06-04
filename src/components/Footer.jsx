@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowUp, FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaArrowUp, FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
 
 export const Footer = () => {
@@ -81,7 +81,9 @@ export const Footer = () => {
             <h4 className='text-accent-cyan font-semibold mb-4'>Connect</h4>
             <div className='flex gap-4'>
               <motion.a
-                href='#'
+                href='https://github.com/rahulnachan'
+                target='_blank'
+                rel='noopener noreferrer'
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
                 className='w-10 h-10 rounded-full glass flex items-center justify-center text-accent-cyan hover:shadow-glow-cyan transition-all'
@@ -89,7 +91,9 @@ export const Footer = () => {
                 <FaGithub />
               </motion.a>
               <motion.a
-                href='#'
+                href='https://www.linkedin.com/in/rahul-nachan-88335a372'
+                target='_blank'
+                rel='noopener noreferrer'
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
                 className='w-10 h-10 rounded-full glass flex items-center justify-center text-accent-cyan hover:shadow-glow-cyan transition-all'
@@ -97,15 +101,17 @@ export const Footer = () => {
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href='#'
+                href='https://wa.me/919022799695'   // Replace with your actual WhatsApp number
+                target='_blank'
+                rel='noopener noreferrer'
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
-                className='w-10 h-10 rounded-full glass flex items-center justify-center text-accent-cyan hover:shadow-glow-cyan transition-all'
+                className='w-10 h-10 rounded-full glass flex items-center justify-center text-green-400 hover:shadow-glow-cyan transition-all'
               >
-                <FaTwitter />
+                <FaWhatsapp />
               </motion.a>
               <motion.a
-                href='mailto:rahul@example.com'
+                href='mailto:nachanrahul8@gmail.com'     // Replace with your real email
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
                 className='w-10 h-10 rounded-full glass flex items-center justify-center text-accent-cyan hover:shadow-glow-cyan transition-all'
